@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{navbar.css}">
+    <title>Fragment</title>
+</head>
+<body>
+
+<div th:fragment="navigationbar-main-menu">
+
+    <ul class="nav_one">
+        <a th:href="@{/rental-registration}">Registrer lejeaftale</a>
+        <a th:href="@{/show-rental-agreements}">Afslut lejeaftaler</a>
+    </ul>
+
+    <ul class="nav_two">
+        <a th:href="@{/damage-registration}">Registrer skaderapport</a>
+        <a th:href="@{financial-analysis}">Økonomi</a>
+    </ul>
+    <div class="inner_header" >
+        <div class="logo">
+            <h1>Bilabbonnement.dk</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

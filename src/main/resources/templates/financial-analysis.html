@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{navbar.css}">
+    <title>Overblik over aktive lejeaftaler</title>
+</head>
+<body>
+
+<div th:replace="Fragments/fragment-navigationbar-main-menu :: navigationbar-main-menu"></div>
+<p>Samlet indkomst i dkk:
+<h1 th:text="${totalIncome}"></h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Lejeaftale ID</th>
+        <th>Stelnummer</th>
+        <th>Startdato</th>
+        <th>Slutdato</th>
+        <th>Pris</th>
+
+    </tr>
+    </thead>
+    <tr th:each="rentalAgreement : ${activeRentalAgreements}">
+        <td th:text="${rentalAgreement.getRentalAgreementID()}"></td>
+        <td th:text="${rentalAgreement.getVinNumber()}"></td>
+        <td th:text="${rentalAgreement.getRentalStartdate()}"></td>
+        <td th:text="${rentalAgreement.getRentalEndDate()}"></td>
+        <td th:text="${rentalAgreement.getPrice()}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.inner_header {
+    width: 500px;
+    height: 100%;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+.inner_header h1 {
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Geneva,serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+.logo h1 {
+    color: black;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Geneva,serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.nav_one {
+    height: 100%;
+    float: left;
+    vertical-align: middle;
+}
+
+.nav_one a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_one a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: black;
+    font-size: 16px;
+}
+
+.nav_two {
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+}
+
+.nav_two a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_two a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: black;
+    font-size: 16px;
+}
+

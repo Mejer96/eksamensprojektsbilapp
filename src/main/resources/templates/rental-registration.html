@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{navbar.css}">
+    <title>Opret lejeaftale</title>
+</head>
+<body>
+
+<div th:replace="Fragments/fragment-navigationbar-main-menu :: navigationbar-main-menu"></div>
+
+
+<form th:action="@{/rental-registration}" method="post">
+
+    <h1>Kundedetaljer:</h1>
+    <label for="firstname">Navn:</label>
+    <br>
+    <input type="text" name="firstname" required>
+    <br>
+    <label for="lastname">Efternavn:</label>
+    <br>
+    <input type="text" name="lastname" required>
+    <br>
+    <label for="phoneNumber">Telefonnummer: </label>
+    <br>
+    <input type="number" name="phoneNumber" required>
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="text" name="email">
+    <h1>Lejeaftale:</h1>
+    <br>
+    <label for="vinNumber">Registreringsnummer</label>
+    <br>
+    <input type="text" name="vinNumber" required>
+    <br>
+    <label for="rentalStartdate">Lejeaftalens ikrafttrædelsesdato:</label>
+    <br>
+    <input type="date" name="rentalStartdate" required>
+    <br>
+    <label for="rentalEndDate">Lejeaftalens udløbsdato:</label>
+    <br>
+    <input type="date" name="rentalEndDate" required>
+    <br>
+    <label for="price">Pris:</label>
+    <br>
+    <input type="text" name="price">
+    <br>
+    <input type="submit" name="Godkend">
+
+</form>
+
+</body>
+</html>
